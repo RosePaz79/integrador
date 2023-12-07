@@ -1,0 +1,52 @@
+<queries>
+    <query id="aparelho">
+        <![CDATA[
+            SELECT
+                id,
+                descricao,
+                ativo
+            FROM
+                aparelho
+        ]]>
+    </query>
+
+    <query id="paciente">
+        <![CDATA[
+            SELECT
+                id,
+                nome,
+                pressao,
+                batimentos,
+                temperatura,
+                codigoreferencia
+            FROM
+                paciente
+        ]]>
+    </query>
+
+    <query id="inserePaciente">
+        <![CDATA[
+        INSERT INTO paciente (nome, batimentos, temperatura, pressao, codigoreferencia) VALUES (:nome, :batimentos, :temperatura, :pressao, :codigoreferencia);
+
+        ]]>
+    </query>
+
+    <query id="PacienteAparelho">
+        <![CDATA[
+            SELECT
+               id,
+               nome,
+               aparelho_id
+            FROM
+                pacienteaparelho
+        ]]>
+    </query>
+    <query id="cadastro">
+        <![CDATA[
+            SELECT
+               *
+            FROM
+                cadastro
+        ]]>
+    </query>
+</queries>
