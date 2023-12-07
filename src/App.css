@@ -1,0 +1,9 @@
+.custom-input::placeholder {
+  color: white; /* Altere para a cor desejada */
+}
+
+/* .chart-container {
+  width: 300px;
+  height: 300px;
+  margin: 10px;
+} */
